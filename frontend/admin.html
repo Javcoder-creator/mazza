@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAZZA Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="admin-body">
+  <!-- Admin Login Gate -->
+  <div class="admin-login-screen" id="adminLoginScreen">
+    <div class="admin-login-card">
+      <div class="admin-login-logo">
+        <span class="brand-emblem">
+          <svg width="38" height="38" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="11" fill="#28B446"/>
+            <path d="M9 24.5V11.5L14.5 18L18 13L21.5 18L27 11.5V24.5" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div>
+          <div class="brand-name">MAZZA ADMIN</div>
+          <div class="brand-tag">BOSHQARUV PANELI</div>
+        </div>
+      </div>
+      <p class="admin-login-sub">Faqat administratorlar uchun. Tizimga kirish uchun ma'lumotlaringizni kiriting.</p>
+      <form id="adminLoginForm">
+        <div class="form-field">
+          <label>Login (Username yoki Email)</label>
+          <input type="text" name="login" required placeholder="admin" />
+        </div>
+        <div class="form-field">
+          <label>Parol</label>
+          <input type="password" name="password" required placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn-primary-full">Admin panelga kirish</button>
+      </form>
+      <div class="admin-back-link">
+        <a href="/">&larr; Do'konga qaytish</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Authenticated Admin Workspace -->
+  <div class="admin-shell hidden" id="adminShell">
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="admin-sidebar-brand">
+        <span class="brand-name" style="color:#fff;">MAZZA</span>
+        <span class="admin-role-pill" id="adminRoleLabel">ADMIN</span>
+      </div>
+
+      <nav class="admin-nav" id="adminNav">
+        <button type="button" class="admin-nav-btn active" data-section="dashboard">&#128202; Boshqaruv paneli</button>
+        <button type="button" class="admin-nav-btn" data-section="orders">&#128230; Buyurtmalar</button>
+        <button type="button" class="admin-nav-btn" data-section="products">&#127828; Mahsulotlar</button>
+        <button type="button" class="admin-nav-btn" data-section="categories">&#128194; Kategoriyalar</button>
+        <button type="button" class="admin-nav-btn" data-section="promotions">&#127881; Aksiyalar</button>
+        <button type="button" class="admin-nav-btn" data-section="banners">&#128444; Bannerlar</button>
+        <button type="button" class="admin-nav-btn" data-section="users">&#128101; Foydalanuvchilar</button>
+      </nav>
+
+      <div class="admin-sidebar-footer">
+        <a href="/" class="admin-side-link">&#127968; Saytga o'tish</a>
+        <button type="button" class="admin-logout-btn" id="adminLogoutBtn">Chiqish</button>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <div class="admin-topbar-left">
+          <button type="button" class="admin-mobile-toggle" id="adminMobileToggle">&#9776;</button>
+          <h1 id="adminPageTitle">Boshqaruv paneli</h1>
+        </div>
+        <div class="admin-topbar-right">
+          <span class="admin-user-chip" id="adminNameChip">Administrator</span>
+        </div>
+      </header>
+
+      <main class="admin-content" id="adminContent">
+        <!-- Dynamic Admin Sections -->
+      </main>
+    </div>
+  </div>
+
+  <!-- Admin Modal -->
+  <div class="modal-backdrop hidden" id="adminModal">
+    <div class="modal-dialog" id="adminModalDialog">
+      <button type="button" class="modal-close-btn" id="adminModalClose">&times;</button>
+      <div id="adminModalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

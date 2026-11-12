@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAZZA — O'zbekistondagi tezkor va mazali fast food yetkazib berish xizmati</title>
+  <meta name="description" content="MAZZA — Toshkent, Samarqand va Farg'ona bo'ylab issiq lavash, burger, shaurma, pitsa, hot-dog va kombo setlarni 30 daqiqada onlayn buyurtma qiling." />
+  <meta name="keywords" content="MAZZA, fast food, lavash, burger, shaurma, pitsa, yetkazib berish, Toshkent, onlayn buyurtma" />
+  <meta name="theme-color" content="#28B446" />
+  <meta property="og:title" content="MAZZA — Mazali Fast Food Online Buyurtma" />
+  <meta property="og:description" content="Yangi va halol taomlarni 30 daqiqada issiq holda yetkazib beramiz." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Subtle Uzbek ornament ribbon inspired by EVOS layout -->
+  <div class="top-ornament-strip" aria-hidden="true"></div>
+
+  <div class="page-wrapper">
+    <!-- Top Utility Bar -->
+    <div class="top-utility-bar">
+      <div class="container top-utility-inner">
+        <div class="utility-links-left">
+          <button type="button" class="utility-pill" data-action="open-branches" data-i18n="nav_branches">Filiallar</button>
+          <button type="button" class="utility-pill" data-action="open-vacancies" data-i18n="nav_vacancies">Vakansiyalar</button>
+          <button type="button" class="utility-pill" data-action="open-about">
+            <span data-i18n="nav_about">Biz haqimizda</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <button type="button" class="utility-pill utility-pill-kids" id="kidsMenuBtn" data-action="toggle-kids">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+            <span data-i18n="nav_kids">Bolalarga</span>
+          </button>
+          <button type="button" class="utility-pill utility-pill-track" data-action="open-tracker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>
+            </svg>
+            <span data-i18n="nav_track">Buyurtma holati</span>
+          </button>
+        </div>
+
+        <div class="utility-links-right">
+          <a href="tel:+998712007070" class="utility-pill phone-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+998 71 200 70 70</span>
+          </a>
+
+          <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="uz">
+              <span class="flag-dot flag-uz"></span>
+              <span>O'zbekcha</span>
+            </button>
+            <button type="button" class="lang-btn" data-lang="ru">
+              <span class="flag-dot flag-ru"></span>
+              <span>Русский</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Sticky Header -->
+    <header class="main-header" id="mainHeader">
+      <div class="container header-inner">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+
+          <a href="#" class="brand-logo" id="brandLogo" aria-label="MAZZA Bosh sahifa">
+            <span class="brand-emblem">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+                <rect width="36" height="36" rx="11" fill="#28B446"/>
+                <path d="M9 24.5V11.5L14.5 18L18 13L21.5 18L27 11.5V24.5" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="18" cy="8.5" r="2" fill="#D4F8DC"/>
+              </svg>
+            </span>
+            <span class="brand-wordmark">
+              <span class="brand-name">MAZZA</span>
+              <span class="brand-tag" data-i18n="brand_tagline">TEZ &amp; HALOL</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Inline Smart Search with Autocomplete -->
+        <div class="header-search-wrap" id="headerSearchWrap">
+          <div class="search-input-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              type="search"
+              id="searchInput"
+              class="search-input"
+              autocomplete="off"
+              data-i18n-placeholder="search_placeholder"
+              placeholder="Lavash, burger, pitsa yoki tarkib qidirish..."
+            />
+            <button type="button" class="search-clear-btn hidden" id="searchClearBtn" aria-label="Tozalash">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <div class="search-autocomplete hidden" id="searchAutocomplete"></div>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="header-search-toggle" id="mobileSearchToggle" aria-label="Qidiruv">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+
+          <button type="button" class="btn-cart-pill" id="openCartBtn">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span data-i18n="cart_btn">Savat</span>
+            <span class="cart-pill-count hidden" id="headerCartCount">0</span>
+          </button>
+
+          <button type="button" class="btn-account-pill" id="accountBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span id="accountBtnLabel" data-i18n="login_btn">Kirish</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Storefront Card Shell -->
+    <main class="container main-shell">
+      <!-- Promo Banners Carousel -->
+      <section class="banners-section" aria-label="Reklama bannerlari">
+        <div class="banner-carousel" id="bannerCarousel">
+          <div class="banner-track" id="bannerTrack">
+            <div class="banner-skeleton"></div>
+          </div>
+          <button type="button" class="banner-arrow banner-prev" id="bannerPrev" aria-label="Oldingi banner">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button type="button" class="banner-arrow banner-next" id="bannerNext" aria-label="Keyingi banner">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <div class="banner-dots" id="bannerDots"></div>
+        </div>
+      </section>
+
+      <!-- Two-Column Catalog Layout -->
+      <section class="catalog-layout">
+        <!-- Left Vertical Category Menu -->
+        <aside class="category-sidebar" aria-label="Mahsulot kategoriyalari">
+          <div class="sidebar-card">
+            <div class="sidebar-head">
+              <h2 class="sidebar-title" data-i18n="menu_title">Menyu</h2>
+              <button type="button" class="sidebar-reset-btn hidden" id="resetFiltersBtn" data-i18n="all_menu">Barchasi</button>
+            </div>
+            <nav class="category-list" id="categoryList">
+              <!-- Populated dynamically -->
+            </nav>
+          </div>
+
+          <!-- Quick Promo Card in Sidebar (desktop bonus matching EVOS right/side card feel) -->
+          <div class="sidebar-promo-box" id="sidebarPromoBox">
+            <div class="promo-box-badge">MAZZA15</div>
+            <h3 data-i18n="sidebar_promo_title">Birinchi buyurtmaga -15%</h3>
+            <p data-i18n="sidebar_promo_desc">100 000 so'mdan oshgan buyurtmalarga yetkazib berish BEPUL!</p>
+            <button type="button" class="promo-copy-btn" id="copyPromoBtn" data-code="MAZZA15">
+              <span data-i18n="copy_promo">Kodni nusxalash</span>
+            </button>
+          </div>
+        </aside>
+
+        <!-- Right Products Area -->
+        <div class="products-content" id="productsContent">
+          <!-- Active Status / Filter Banner -->
+          <div class="catalog-status-bar hidden" id="catalogStatusBar">
+            <div class="status-bar-text" id="catalogStatusText"></div>
+            <button type="button" class="status-clear-btn" id="clearCatalogStatusBtn" data-i18n="show_all_menu">Barcha menyuni ko'rish</button>
+          </div>
+
+          <!-- Active Promotions Strip (shown on Aksiyalar or All) -->
+          <div class="promotions-strip hidden" id="promotionsStrip"></div>
+
+          <!-- Products Grid Container -->
+          <div id="catalogContainer">
+            <div class="products-grid-skeleton">
+              <div class="card-skeleton"></div>
+              <div class="card-skeleton"></div>
+              <div class="card-skeleton"></div>
+              <div class="card-skeleton"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <span class="brand-name">MAZZA</span>
+            <span class="footer-badge">HALOL &bull; 24/7</span>
+          </div>
+          <p class="footer-desc" data-i18n="footer_desc">
+            O'zbekiston bo'ylab yangi, issiq va mazali fast food taomlarini 30 daqiqada eshigingizgacha yetkazib beramiz.
+          </p>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-i18n="footer_company">Kompaniya</h4>
+          <button type="button" data-action="open-branches" data-i18n="nav_branches">Filiallar</button>
+          <button type="button" data-action="open-vacancies" data-i18n="nav_vacancies">Vakansiyalar</button>
+          <button type="button" data-action="open-about" data-i18n="nav_about">Biz haqimizda</button>
+          <a href="/admin" data-i18n="footer_admin">Admin panel</a>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-i18n="footer_contact">Aloqa markazi</h4>
+          <a href="tel:+998712007070">+998 71 200 70 70</a>
+          <span>hello@mazza.uz</span>
+          <span data-i18n="footer_hours">Har kuni: 09:00 – 03:00</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; 2026 MAZZA Fast Food Platform. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span></span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Mobile Floating Cart Bar -->
+  <div class="mobile-cart-bar hidden" id="mobileCartBar">
+    <button type="button" class="mobile-cart-bar-btn" id="mobileOpenCartBtn">
+      <span class="mobile-cart-left">
+        <span class="mobile-cart-badge" id="mobileCartCount">0</span>
+        <span data-i18n="cart_btn">Savat</span>
+      </span>
+      <span class="mobile-cart-total" id="mobileCartTotal">0 so'm</span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop hidden" id="mobileNavDrawer">
+    <div class="mobile-nav-panel">
+      <div class="drawer-header">
+        <span class="brand-name">MAZZA</span>
+        <button type="button" class="icon-close-btn" data-close="mobileNavDrawer">&times;</button>
+      </div>
+      <div class="mobile-nav-links">
+        <button type="button" data-action="open-branches" data-i18n="nav_branches">Filiallar</button>
+        <button type="button" data-action="open-vacancies" data-i18n="nav_vacancies">Vakansiyalar</button>
+        <button type="button" data-action="open-about" data-i18n="nav_about">Biz haqimizda</button>
+        <button type="button" data-action="toggle-kids" data-i18n="nav_kids">Bolalarga</button>
+        <button type="button" data-action="open-tracker" data-i18n="nav_track">Buyurtma holati</button>
+        <a href="tel:+998712007070">+998 71 200 70 70</a>
+      </div>
+      <div class="mobile-nav-lang">
+        <button type="button" class="lang-btn-mobile" data-lang="uz">O'zbekcha</button>
+        <button type="button" class="lang-btn-mobile" data-lang="ru">Русский</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-over Cart Drawer -->
+  <div class="drawer-backdrop hidden" id="cartDrawer">
+    <div class="cart-drawer-panel">
+      <div class="drawer-header">
+        <h2 data-i18n="cart_title">Sizning savatingiz</h2>
+        <button type="button" class="icon-close-btn" data-close="cartDrawer">&times;</button>
+      </div>
+      <div class="cart-drawer-body" id="cartDrawerBody"></div>
+      <div class="cart-drawer-footer hidden" id="cartDrawerFooter">
+        <div class="promo-input-row">
+          <input type="text" id="cartPromoInput" data-i18n-placeholder="promo_placeholder" placeholder="Promo kod (masalan: MAZZA15)" />
+          <button type="button" id="applyPromoBtn" data-i18n="apply_btn">Qo'llash</button>
+        </div>
+        <div id="appliedPromoBadge" class="applied-promo-badge hidden"></div>
+        <div class="cart-summary-lines" id="cartSummaryLines"></div>
+        <button type="button" class="btn-primary-full" id="proceedCheckoutBtn" data-i18n="checkout_btn">Buyurtma berish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Generic Modal Container (Product Detail, Checkout, Auth, User Account, Info, Order Tracker) -->
+  <div class="modal-backdrop hidden" id="appModal">
+    <div class="modal-dialog" id="appModalDialog" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close-btn" id="appModalClose" aria-label="Yopish">&times;</button>
+      <div id="appModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/state.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

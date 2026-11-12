@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#ffffff"/>
+  <ellipse cx="300" cy="485" rx="190" ry="36" fill="#e5eef2"/>
+  <!-- Cheerful Kids Meal Box -->
+  <path d="M165 245 L435 245 L415 450 C412 465, 188 465, 185 450 Z" fill="#32B5E5"/>
+  <path d="M165 245 L300 205 L435 245 L300 268 Z" fill="#28B446"/>
+  <!-- Cute handle -->
+  <path d="M245 205 C245 155, 355 155, 355 205" fill="none" stroke="#006B35" stroke-width="14" stroke-linecap="round"/>
+  <!-- Smile badge on box -->
+  <circle cx="300" cy="355" r="54" fill="#ffffff"/>
+  <circle cx="282" cy="343" r="6" fill="#006B35"/>
+  <circle cx="318" cy="343" r="6" fill="#006B35"/>
+  <path d="M276 364 Q300 388 324 364" fill="none" stroke="#28B446" stroke-width="7" stroke-linecap="round"/>
+  <!-- Mini Burger peeking -->
+  <g transform="translate(115, 290)">
+    <ellipse cx="85" cy="145" rx="75" ry="26" fill="#f5b041"/>
+    <rect x="14" y="128" width="142" height="18" rx="9" fill="#6e2c00"/>
+    <path d="M16 128 L55 142 L95 128 L135 142 L154 128 Z" fill="#f7dc6f"/>
+    <path d="M10 116 Q48 100 85 116 Q122 100 160 116 Z" fill="#28B446"/>
+    <path d="M14 115 C14 58, 156 58, 156 115 Z" fill="#f5b041"/>
+    <ellipse cx="58" cy="82" rx="4" ry="2.5" fill="#fff8dc"/>
+    <ellipse cx="92" cy="76" rx="4" ry="2.5" fill="#fff8dc"/>
+    <ellipse cx="118" cy="88" rx="4" ry="2.5" fill="#fff8dc"/>
+  </g>
+  <!-- Juice Box with Straw -->
+  <g transform="translate(385, 265)">
+    <path d="M55 18 L55 -15 L78 -25" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M55 18 L55 -15 L78 -25" fill="none" stroke="#ff7a45" stroke-width="4" stroke-linecap="round"/>
+    <rect x="20" y="18" width="76" height="140" rx="12" fill="#ffa940"/>
+    <circle cx="58" cy="88" r="22" fill="#ffffff" opacity="0.9"/>
+    <circle cx="58" cy="88" r="14" fill="#ff7a45"/>
+  </g>
+  <!-- Sparkles -->
+  <circle cx="150" cy="180" r="8" fill="#ffd666"/>
+  <circle cx="455" cy="175" r="10" fill="#32B5E5"/>
+  <circle cx="475" cy="235" r="6" fill="#28B446"/>
+</svg>
